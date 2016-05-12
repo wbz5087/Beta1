@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_menu"
+        android:fitsSystemWindows="true">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TimePicker>
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Repeat"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Mon"
+            android:textOn="Mon" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Tue"
+            android:textOn="Tue" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Wed"
+            android:textOn="Wed" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Thu"
+            android:textOn="Thu" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Fri"
+            android:textOn="Fri" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Sat"
+            android:textOn="Sat" />
+
+            <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_view"
+            android:textColor="@color/color_addMenu"
+            android:textOff="Sun"
+            android:textOn="Sun" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lllable"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm_name"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvalarmlable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="alarm"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/chooseSong"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_song"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ring_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="default"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/forward" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/how_to_shutdown"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="关闭方式"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/way_to_shutdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="算术题"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/forward" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_Volume"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="6dp"
+                android:text="@string/text_shake"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearadd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_menu"
+            android:text="@string/button_cancel" />
+
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_menu"
+            android:text="@string/button_ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDelClock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_menu"
+            android:text="@string/button_delete" />
+
+        <Button
+            android:id="@+id/btnSaveClock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_menu"
+            android:text="@string/button_save" />
+    </LinearLayout>
+
+</LinearLayout>

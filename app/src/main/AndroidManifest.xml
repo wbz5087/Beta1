@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wubingzhang.week9">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".notes.NoteActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
+
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".notes.EditActivity"
+            android:label="@string/title_edit_notes_activity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".notes.NoteActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.wubingzhang.week9.notes.NoteActivity" />
+        </activity>
+            <activity
+                android:name=".alarm.AddAlarmActivity"
+                android:label="@string/title_activity_set"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            <activity
+                android:name=".alarm.SettingActivity"
+                android:label="@string/title_activity_setting"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            <activity
+                android:name=".alarm.PlayAlarmActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                <intent-filter>
+                    <action android:name="com.liwenquan.sl.playalarm" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+
+            <activity
+                android:name=".alarm.AboutUsActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+            <activity
+                android:name=".alarm.SetAlarmActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+            <activity
+                android:name=".alarm.ClockListActivity"
+                android:launchMode="singleTask"
+                android:label="Alarm"
+                android:theme="@style/AppTheme.NoActionBar">
+                //android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            </activity>
+
+            <!-- 注册系统广播接收器 -->
+            <receiver android:name=".alarm.BootBroadcastReceiver">
+                <intent-filter>
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                    <category android:name="android.intent.category.HOME" />
+                </intent-filter>
+            </receiver>
+            <receiver android:name=".alarm.AlarmReceiver" />
+
+            <activity
+                android:name=".alarm.HelloActivity"
+                android:label="@string/title_activity_hello"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            <activity
+                android:name=".alarm.PushBugActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name=".note.notes"
+            android:label="notes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".account.account"
+            android:label="account book"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".note.addNotes"
+            android:label="add notes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".account.viewAnalysis"
+            android:label="analysis"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

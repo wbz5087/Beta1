@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liwenquan.sl.PushBugActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_menu"
+        android:fitsSystemWindows="true">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_bug_title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="top"
+        android:hint="问题描述"
+        android:padding="16dp" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/et_email_address"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:background="@drawable/bg_edittext"-->
+        <!--android:hint="请输入邮箱地址"-->
+        <!--android:paddingLeft="16dp" />-->
+
+    <Button
+        android:id="@+id/push_bugs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_menu"
+        android:text="@string/button_commitbug"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
